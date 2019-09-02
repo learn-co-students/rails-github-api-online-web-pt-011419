@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       session[:token] = body["access_token"]
       # redirect_to root_path
       
-      
+      # why do I need this - lines 16-20?      
       user_response = Faraday.get("https://api.github.com/user") do |req|
         req.headers = { 'Accept': 'application/json', 'Authorization': "token #{session[:token]}" }
          end

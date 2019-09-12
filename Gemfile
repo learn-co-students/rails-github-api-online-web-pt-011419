@@ -36,6 +36,7 @@ group :test do
   gem 'capybara'
   gem 'rack_session_access'
   gem 'webmock'
+  gem 'web-console', '~> 2.0'
 end
 
 # Use ActiveModel has_secure_password
@@ -57,5 +58,4 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
 end
